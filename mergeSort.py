@@ -22,6 +22,7 @@ def mergeSort(aList):
 
     # 分解问题，并递归调用
     middle = len(aList) // 2
+    print(middle)
     left = mergeSort(aList[:middle])    #左半部排好序
     right = mergeSort(aList[middle:])   #右半部排好序
 
@@ -56,7 +57,7 @@ def mergeSort(aList):
                 aList[k] = rightHalf[j]
                 j+=1
             k+=1
-
+        print(mid)
         while i < len(leftHalf):        #归并左半部剩余项
             aList[k] = leftHalf[i]
             i+=1
@@ -69,7 +70,7 @@ def mergeSort(aList):
 '''
 
 aList = [2,87,93,6,12,73,8,19,7,46,98,1,7]
-mergeSort(aList)
+aList = mergeSort(aList)
 print(aList)
 
 

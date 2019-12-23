@@ -35,5 +35,5 @@ def gapInsertionSort(aList, start, gap):
         aList[position] = curValue
 
 aList = [2,87,93,6,12,73,8,19,7,46,98,1,7]
-shellSort(aList)
+aList = shellSort(aList)
 print(aList)
